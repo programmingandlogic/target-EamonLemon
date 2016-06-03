@@ -1,0 +1,29 @@
+import acm.program.*;
+import acm.graphics.*;
+import java.awt.*;
+
+public class Rainbow extends GraphicsProgram {
+
+	public void run() {
+		double x = getWidth();
+		double y = getHeight();
+		//sets the width and height as the variables x and y for easier access 
+		GOval oval1 = new GOval (x/2-72,y/2-72,144,144);
+		oval1.setFilled(true);
+		oval1.setColor(Color.RED);
+		add(oval1);
+		//makes the first oval
+		GOval oval2 = new GOval (x/2-47,y/2-47,94,94);
+		oval2.setFilled(true);
+		oval2.setColor(Color.WHITE);
+		add(oval2);
+		//second oval half the size of the first one
+		GOval oval3 = new GOval (x/2-22,y/2-22,44,44);
+		oval3.setFilled(true);
+		oval3.setColor(Color.RED);
+		add(oval3);
+		//final oval, makes the bullseye and is half the size of oval2
+		
+	}
+
+}
